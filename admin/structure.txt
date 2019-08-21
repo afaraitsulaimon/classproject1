@@ -1,0 +1,22 @@
+TODODB
+
+TASK
+id int (PK)
+TaskName varchar(50)
+DueDate datatime
+Priority enum(High, VeryHigh, Normal)
+TaskDescription text
+CreatedAt timestamp
+UserId in (FK)
+
+USERS
+id int (PK)
+Username varchar(20)
+Email varchar(50)
+Phone varchar(11)
+Password varchar(32)
+Gender enum(Male, Female)
+Authority enum(Admin, Subscriber)
+JoinedDate timestamp
+
+
